@@ -19,13 +19,7 @@ default class Peer extends Component {
           <br />
           <p>
             <strong>{i18n.t('Location')} </strong> {this.props.location.formatted || i18n.t('Unknown')}
-          </p>
-          <p>
-            <strong>{i18n.t('Agent Version')} </strong> <code>{this.props.peer.agentVersion || ''}</code>
-          </p>
-          <p>
-            <strong>{i18n.t('Protocol Version')} </strong> <code>{this.props.peer.protocolVersion || ''}</code>
-          </p>
+          </p>          
           <br />
           <div>
             <strong>{i18n.t('Public Key')}</strong>

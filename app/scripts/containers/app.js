@@ -54,8 +54,7 @@ class App extends Component {
                   <div className='row'>
                     <div className='navbar-header'>
                       <Link className='navbar-brand col-xs-12' to='/'>
-                        <img src={require('../../img/logo.png')} alt='IPFS' className='img-responsive logo' />
-                        <span className='sr-only'>{i18n.t('IPFS')}</span>
+                        <img src={require('../../img/logo.png')} className='img-responsive logo' />
                       </Link>
                     </div>
                   </div>
@@ -69,27 +68,7 @@ class App extends Component {
                       onClick={() => this.context.router.push(`/objects/${parse(this.refs.dagPath.value).urlify()}`)}>
                       {i18n.t('GO')}
                     </button>
-                  </form>
-                  <ul className='nav navbar-nav navbar-right collapse navbar-collapse'>
-                    <li>
-                      <a href='https://ipfs.io' target='_blank' data-toggle='tooltip' data-placement='bottom' title={i18n.t('About IPFS')}>
-                        <img src={require('../../img/help.png')} alt='Help' className='img-responsive icon' />
-                        <span className='sr-only'>{i18n.t('Help')}</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href='https://github.com/ipfs/webui' target='_blank' data-toggle='tooltip' data-placement='bottom' title={i18n.t('Github Repository')}>
-                        <img src={require('../../img/git.png')} alt='Github' className='img-responsive icon' />
-                        <span className='sr-only'>{i18n.t('Github')}</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href='https://github.com/ipfs/webui/issues/new' target='_blank' data-toggle='tooltip' data-placement='bottom' title={i18n.t('Report Bugs')}>
-                        <img src={require('../../img/bug.png')} alt='Report a bug' className='img-responsive icon' />
-                        <span className='sr-only'>{i18n.t('Report a bug')}</span>
-                      </a>
-                    </li>
-                  </ul>
+                  </form>                  
                 </div>
               </div>
             </div>

@@ -1,6 +1,6 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import {Row, Nav} from 'react-bootstrap'
+import { Row, Nav } from 'react-bootstrap'
 
 import NavItem from './nav-item'
 
@@ -10,13 +10,6 @@ const tabs = [{
 }, {
   title: 'connections',
   icon: 'globe'
-}, {
-  title: 'files',
-  icon: 'file'
-}, {
-  title: 'DAG',
-  url: 'objects',
-  icon: 'list-alt'
 }, {
   title: 'config',
   icon: 'cog'
@@ -29,7 +22,7 @@ export default class Navigation extends Component {
     router: PropTypes.object.isRequired
   };
 
-  render () {
+  render() {
     const items = tabs.map((tab, idx) => {
       const url = tab.url ? tab.url : ('/' + tab.title)
       const title = tab.title.substring(0, 1).toUpperCase() + tab.title.substring(1)
