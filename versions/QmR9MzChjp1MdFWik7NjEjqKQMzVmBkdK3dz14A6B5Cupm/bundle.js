@@ -1154,7 +1154,7 @@ var Home = React.createClass({
         location: { formatted: "" }
       },
       GatewayEnabled: false,
-      GatewayUrl: "http://localhost:8080/"
+      GatewayUrl: "http://188.166.161.58:8080/"
     };
   },
 
@@ -50850,7 +50850,7 @@ var pkg = require('../package.json')
 exports = module.exports = {
   'api-path': '/api/v0/',
   'user-agent': '/node-' + pkg.name + '/' + pkg.version + '/',
-  'host': 'localhost',
+  'host': '188.166.161.58',
   'port': '5001'
 }
 

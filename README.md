@@ -32,7 +32,7 @@ Make sure [node.js](https://nodejs.org/) version 4+ and [npm](https://docs.npmjs
 When developing the WebUI you will need an ipfs daemon running with API access on port `5001`, as well as the following configuration set, otherwise you will not be able to communicate with the ipfs node.
 
 ```bash
-$ ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["http://localhost:3000"]'
+$ ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["http://188.166.161.58:8081"]'
 $ ipfs config --json API.HTTPHeaders.Access-Control-Allow-Methods '["PUT", "GET", "POST"]'
 $ ipfs config --json API.HTTPHeaders.Access-Control-Allow-Credentials '["true"]'
 ```
@@ -43,7 +43,7 @@ $ ipfs config --json API.HTTPHeaders.Access-Control-Allow-Credentials '["true"]'
 $ git clone https://github.com/ipfs/webui
 $ cd webui
 $ npm install
-# Runs server on port 3000.
+# Runs server on port 8081.
 $ npm start
 ```
 

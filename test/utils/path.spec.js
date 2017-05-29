@@ -42,7 +42,7 @@ describe('Path', () => {
 
   describe('parse', () => {
     it('works', () => {
-      expect(parse('/ipfs/localhost/hello')).to.be.an.instanceOf(Path)
+      expect(parse('/ipfs/188.166.161.58/hello')).to.be.an.instanceOf(Path)
     })
   })
 })

@@ -1049,7 +1049,7 @@ var Home = React.createClass({
         location: { formatted: '' }
       },
       GatewayEnabled: false,
-      GatewayUrl: 'http://localhost:8080/'
+      GatewayUrl: 'http://188.166.161.58:8080/'
     }
   },
 
@@ -21677,7 +21677,7 @@ try {
 var API_PATH = '/api/v0/'
 
 module.exports = function (host, port) {
-  if (!host) host = 'localhost'
+  if (!host) host = '188.166.161.58'
   if (!port) port = 5001
 
   function send (path, args, opts, files, buffer, cb) {
